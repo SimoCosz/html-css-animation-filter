@@ -1,3 +1,4 @@
+/* EX1 */
 .ex-1-square {
     width: 100px;
     height: 100px;
@@ -8,7 +9,7 @@
 .ex-1-square:hover{
     background-color: red;
 }
-
+/* EX2 */
 .ex-2-square {
     width: 100px;
     height: 100px;
@@ -18,7 +19,7 @@
 .ex-2-square:active{
     width: 100%;
 }
-
+/* EX3 */
 .ex-3-square {
     width: 100px;
     height: 100px;
@@ -28,7 +29,7 @@
 .ex-3-square:hover{
     border-radius: 50%;
 }
-
+/* EX4 */
 .ex-4-square {
     width: 100px;
     height: 100px;
@@ -38,7 +39,7 @@
 .ex-4-square:hover{
     opacity: 0;
 }
-
+/* EX5 */
 .ex-5-square {
     margin: 20px;
     width: 60px;
@@ -55,7 +56,7 @@
     width: 10px;
     height: 10px;
 }
-
+/* EX6 */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
@@ -63,14 +64,14 @@
 .ex-6-img:hover{
     filter: grayscale(100%);
 }
-
+/* EX7 */
 .ex-7-img{
     transition: filter 2s;
 }
 .ex-7-img:hover{
     filter: grayscale(50%) sepia(100%);
 }
-
+/* EX8 */
 .ex-8-img{
     transition: all 2s;
 }
@@ -78,7 +79,7 @@
     border-radius: 30px;
     filter: contrast(130%) saturate(150%) brightness(100%);
 }
-
+/* EX9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
@@ -88,7 +89,7 @@
     width: 100%;
     margin: 0;
 }
-
+/* EX10 */
 .ex-10-icon {
     font-size: 60px;
 }
@@ -99,7 +100,7 @@
     from {transform: rotate(0deg);}
     to {transform: rotate(-360deg);}
 }
-
+/* EX11 */
 .ex-11-icon {
     font-size: 60px;
     transition: ease-in 2s ;
@@ -144,4 +145,43 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+/* EX12 */
+.ex-12-top-white{
+    animation: slide-top 3s infinite;
+}
+.ex-12-bottom-white{
+    animation: slide-bottom 3s infinite;
+}
+@keyframes slide-top{
+    from{top:-10px; left:5%;}
+    50%{top:-10px; left:80%;}
+    to{top:-10px; left:5%;}
+}
+@keyframes slide-bottom{
+    from{bottom:-10px; right:5%;}
+    50%{bottom:-10px; right:80%;}
+    to{bottom:-10px; right:5%;}
+}
+/* EX13 */
+.ex-13-top-white{
+    animation: slide-circle-top 2s linear infinite;
+}
+.ex-13-bottom-white{
+    animation: slide-circle-bottom 2s linear infinite;
+}
+
+@keyframes slide-circle-top{
+    from{top:-10px; left:0%;}
+    25%{top:-10px; left:80%;}
+    50%{top:60px; left:80%;}
+    75%{top:60px; left:-10%;}
+    to{top:-10px; left:-10%;}
+}
+@keyframes slide-circle-bottom{
+    from{bottom:-10px; right:0%;}
+    25%{bottom:-10px; right:80%;}
+    50%{bottom:60px; right:80%;}
+    75%{bottom:60px; right:-10%;}
+    to{bottom:-10px; right:-10%;}
 }
